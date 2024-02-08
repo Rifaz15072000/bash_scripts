@@ -1,0 +1,12 @@
+#!/usr/bin/bash
+
+# Set the URL of the website to download
+website_url="https://google.com"
+
+# Set the destination directory for downloaded content
+download_dir=""
+
+# Use wget to recursively download the website content
+wget -r -np -P "$download_dir" "$website_url"
+
+echo "Website content downloaded successfully!"
